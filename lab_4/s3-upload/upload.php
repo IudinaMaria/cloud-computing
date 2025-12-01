@@ -5,7 +5,7 @@ use Aws\S3\S3Client;
 use Ramsey\Uuid\Uuid;
 
 // ---------- SETTINGS ----------
-define('BUCKET_NAME', 'cc-lab4-pub-k02-maria'); // <<< поменяй на свой бакет
+define('BUCKET_NAME', 'cc-lab4-pub-k02-maria');
 $region = 'eu-central-1';
 
 // ---------- AWS CLIENT ----------
