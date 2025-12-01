@@ -1,0 +1,17 @@
+# AWS keys
+*.pem
+*.key
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
