@@ -324,7 +324,7 @@ _Для всех инстансов использую_:
 
 3. Подключаюсь к `bastion-host-maria` по SSH:
    ```bash
-   ssh -i student-key-k02.pem ec2-user@<Bastion-Host-Public-IP>
+   ssh -i student-key-k02.pem ec2-user@18.184.115.157
    ```
 
    ![alt text](images/21.png)
@@ -341,7 +341,7 @@ _Для всех инстансов использую_:
 
 5. С `bastion-host-maria` попробую подключиться к `db-server-maria`:
    ```bash
-   mysql -h <DB-Server-Private-IP> -u root -p
+   mysql -h 10.2.2.162 -u root -p
    ```
    > Если подключение успешно, значит ваша приватная подсеть и NAT Gateway настроены правильно.
 6. Выхожу из `db-server-maria` и `bastion-host-maria`.
@@ -362,7 +362,7 @@ _Для всех инстансов использую_:
 2. Подключаюсь к `bastion-host-maria` с опцией `-A` и '-J':
 
    ```bash
-   ssh -A -J ec2-user@<Bastion-Host-Public-IP> ec2-user@10.2.2.162
+   ssh -A -J ec2-user@18.184.115.157 ec2-user@10.2.2.162
    ```
 
    > Что делает опция `-A` и `-J`?
